@@ -1,0 +1,16 @@
+{
+    "testRunner": "jest",
+    "mutate": ["./src/*/**"],
+    "coverageAnalysis": "off",
+    "checkers": ["typescript"],
+    "allowConsoleColors": true,
+    "tsconfigFile": "tsconfig.json",
+    "commandRunner": { "command": "npm test" },
+    "reporters": ["progress", "clear-text", "html"],
+    "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+    "jest": {
+        "projectType": "custom",
+        "enableFindRelatedTests": true,
+        "configFile": "./jest.config.json"
+    }
+}

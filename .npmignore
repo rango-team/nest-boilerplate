@@ -1,0 +1,21 @@
+# source
+src/
+**/*.map
+
+# environment
+.husky
+.vscode
+.github
+.gitignore
+
+# formatter
+.editorconfig
+.eslintrc
+.eslintignore
+.prettierrc
+.prettierignore
+
+# config
+.npmrc
+tsconfig.json
+tsconfig.build.json

@@ -1,0 +1,11 @@
+# Config/Tmp/Cache
+.husky
+.jest
+.github
+.stryker-tmp
+.vscode
+
+# Source/Reports
+dist
+reports
+node_modules

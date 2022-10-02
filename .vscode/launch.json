@@ -1,0 +1,35 @@
+{
+    "version": "0.0.1",
+    "configurations": [
+        {
+            "type": "node",
+            "restart": true,
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "name": "Debug Development",
+            "console": "integratedTerminal",
+            "autoAttachChildProcesses": true,
+            "runtimeArgs": ["run", "start", "--", "--inspect-brk"],
+        },
+        {
+            "type": "node",
+            "restart": true,
+            "request": "launch",
+            "name": "Debug Production",
+            "runtimeExecutable": "npm",
+            "console": "integratedTerminal",
+            "autoAttachChildProcesses": true,
+            "runtimeArgs": ["run", "start:prod", "--", "--inspect-brk"],
+        },
+        {
+            "type": "node",
+            "restart": true,
+            "request": "launch",
+            "name": "Debug Staging",
+            "runtimeExecutable": "npm",
+            "console": "integratedTerminal",
+            "autoAttachChildProcesses": true,
+            "runtimeArgs": ["run", "start:stg", "--", "--inspect-brk"],
+        }
+    ]
+}

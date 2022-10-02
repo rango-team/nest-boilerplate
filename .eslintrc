@@ -1,0 +1,28 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint/eslint-plugin"],
+    "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:@typescript-eslint/recommended"],
+    "env": {
+        "jest": true,
+        "node": true,
+        "es2021": true
+    },
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaVersion": "latest",
+        "project": "tsconfig.json"
+    },
+    "rules": {
+        "indent": "off",
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"],
+        "linebreak-style": ["error", "windows"],
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/interface-name-prefix": "off",
+        "no-console": ["error", { "allow": ["warm", "error"] }],
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/explicit-module-boundary-types": "off"
+    }
+}

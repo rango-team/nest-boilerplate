@@ -1,0 +1,38 @@
+{
+    "clearMocks": true,
+    "maxWorkers": "50%",
+    "collectCoverage": true,
+    "coverageProvider": "v8",
+    "testEnvironment": "node",
+    "cacheDirectory": ".jest/cache",
+    "extensionsToTreatAsEsm": [".ts"],
+    "coverageDirectory": ".jest/coverage",
+    "preset": "ts-jest/presets/default-esm",
+    "moduleDirectories": ["node_modules", "src"],
+    "moduleFileExtensions": ["js", "ts", "json"],
+    "collectCoverageFrom": ["src/**/*", "!src/index.ts", "!src/**/types/**", "!src/**/fixtures/**"],
+    "moduleNameMapper": {
+        "^(\\.{1,2}/.*)\\.js$": "$1"
+    },
+    "testPathIgnorePatterns": [
+        "node_modules",
+        "src/index.ts",
+        "<rootDir>/dist/",
+        "<rootDir>/.jest/",
+        "<rootDir>/.stryker-tmp/"
+    ],
+    "modulePathIgnorePatterns": [
+        "node_modules",
+        "src/index.ts",
+        "<rootDir>/dist/",
+        "<rootDir>/.jest/",
+        "<rootDir>/.stryker-tmp/"
+    ],
+    "coveragePathIgnorePatterns": [
+        "node_modules",
+        "src/index.ts",
+        "<rootDir>/dist/",
+        "<rootDir>/.jest/",
+        "<rootDir>/.stryker-tmp/"
+    ]
+}
